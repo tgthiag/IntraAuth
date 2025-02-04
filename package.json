@@ -1,0 +1,26 @@
+{
+  "name": "intraauth",
+  "version": "1.0.0",
+  "description": "User authentication API with JWT and MySQL",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "serve": "pm2 start src/index.js --name intraauth"
+  },
+  "keywords": ["authentication", "JWT", "Node.js", "Express", "MySQL"],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
