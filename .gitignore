@@ -1,3 +1,4 @@
 node_modules
 .env
 deploy.sh
+deploy_rental.sh
