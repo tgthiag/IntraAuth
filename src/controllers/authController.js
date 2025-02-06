@@ -1,3 +1,4 @@
+//controllers/authController.js
 import db from '../config/database.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
@@ -25,7 +26,7 @@ export const registerUser = async (req, res) => {
 
     try {
         const [result] = await db.execute(
-            'INSERT INTO intra_users (username, password_hash) VALUES (?, ?)',
+            'INSERT INTO intra_users (username, password_hash,is_enabled) VALUES (?, ?, 1)',
             [username, hashedPassword]
         );
         log('User registered successfully', { userId: result.insertId });

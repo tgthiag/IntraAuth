@@ -1,3 +1,4 @@
+//routes/itemRoutes.js
 import express from 'express';
 import { getItems, addItem, updateItem, deleteItem } from '../controllers/itemController.js';
 import authenticateToken from '../middleware/auth.js';

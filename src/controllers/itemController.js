@@ -1,3 +1,4 @@
+//controllers/itemController.js
 import db from '../config/database.js';
 
 // **Get All Items**
