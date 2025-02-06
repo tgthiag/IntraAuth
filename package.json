@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "serve": "pm2 start src/index.js --name intraauth"
+    "serve": "pm2 start src/index.js --name intraauth",
+      "deploy": "bash ./deploy.sh",
+      "deploy_rental": "bash ./deploy_rental.sh"
   },
   "keywords": ["authentication", "JWT", "Node.js", "Express", "MySQL"],
   "author": "Your Name",
